@@ -50,5 +50,5 @@ $routes->get('(:segment)', [Pages::class, 'view']);
  * needing to reload it.
  */
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
-    require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
+  require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
