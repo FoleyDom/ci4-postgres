@@ -38,6 +38,9 @@ $routes->get('(:segment)', [Pages::class, 'view']);
 
 service('auth')->routes($routes);
 
+$routes->group('pages', static function ($routes) {
+  service('auth')->routes($routes);
+});
 /*
  * --------------------------------------------------------------------
  * Additional Routing
